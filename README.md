@@ -58,6 +58,10 @@ Create user with read/write access:
 
     npm start
 
+### start exploere with forever
+
+    forever start -c "npm start" ./
+    
 *note: mongod must be running to start the explorer*
 
 As of version 1.4.0 the explorer defaults to cluster mode, forking an instance of its process to each cpu core. This results in increased performance and stability. Load balancing gets automatically taken care of and any instances that for some reason die, will be restarted automatically. For testing/development (or if you just wish to) a single instance can be launched with
